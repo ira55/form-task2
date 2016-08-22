@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <form action="https://formspree.io/ira.demkovych@gmail.com" method="post">
+        <fieldset>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" pattern="[A-Za-z]{3,20}" required placeholder="Enter name"/>
+        </fieldset>
+        <fieldset>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email"required placeholder="Email"/>
+        </fieldset>
+        <fieldset>
+            <label for="sex">Sex:</label>
+            <input type="radio" name="sex" id="sex" value="male"/>Male
+            <input type="radio" name="sex" id="sex" value="female"/>Female
+        </fieldset>
+        <fieldset>
+            <label for="age">Age:</label>
+            <input type="radio" name="age" id="age" value="16-18"/>16-18
+            <input type="radio" name="age" id="age" value="19-30"/>19-30
+            <input type="radio" name="age" id="age" value="31-45"/>31-45
+            <input type="radio" name="age" id="age" value="46-60"/>46-60
+        </fieldset>
+        <fieldset>
+            <label for="color">Your favorite color:</label>
+                <select size="1" name="color" id="color">
+                  <option value="white">White</option>
+                  <option value="black">Black</option>
+                  <option value="green">Green</option>
+                  <option value="blue">Blue</option>
+                  <option value="red">Red</option>
+                  <option value="yellow">Yellow</option>
+                </select>
+        </fieldset>
+        <fieldset>
+            <label for="activ"></label>
+            <legend>Which of these activities do you like?</legend>
+            <input type="checkbox" name="activ" id="activ" value="hiking"/>Hiking<br>
+            <input type="checkbox" name="activ" id="activ" value="scuba-diving"/>Scuba-diving<br>
+            <input type="checkbox" name="activ" id="activ" value="skiing"/>Skiing<br>
+            <input type="checkbox" name="activ" id="activ" value="camping"/>Camping<br>
+            <input type="checkbox" name="activ" id="activ" value="mountain biking"/>Mountain biking<br>
+            <input type="checkbox" name="activ" id="activ" value="horse riding"/>Horse riding<br>
+            <input type="checkbox" name="activ" id="activ" value="windsurfing"/>Windsurfing<br>
+            <input type="checkbox" name="activ" id="activ" value="fishing"/>Fishing<br>
+            <input type="checkbox" name="activ" id="activ" value="rock climbing"/>Rock climbing<br>
+        </fieldset>
+         <fieldset>
+            <label for="site"></label>
+            <legend>What do you think of my site?</legend>
+            <input type="radio" name="site" id="site" value="5"/>It looks great!<br>
+            <input type="radio" name="site" id="site" value="4"/>It's alright.<br>
+            <input type="radio" name="site" id="site" value="3"/>Huh!Don't notice a change.<br>
+            <input type="radio" name="site" id="site" value="2"/>Bad site.<br>
+        </fieldset><br>
+            <label for="text"></label>
+                <textarea row="4" col="50" name="text" id="text" placeholder="Message"/></textarea><br>
+        <input type="submit" name="send" value="Send"/>
+    </form>
+</body>
+</html>
